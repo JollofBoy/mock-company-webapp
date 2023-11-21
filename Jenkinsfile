@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage("build") {
             steps {
-                // I don't know how this works so I need to check that the building actually works
+                /* I don't know how this works so I need to check that the building actually works */
                 echo "Building..."
                 ./gradlew assemble
             }
@@ -15,14 +15,13 @@ pipeline {
 
         stage("test") {
             steps {
-                // the same as for the building comment
+                /* the same as for the building comment */
                 echo "Testing..."
                 ./gradlew test
             }
         }
 
-        // there may be a deploy stage that would need to be made
-        /*
+        /* there may be a deploy stage that would need to be made
         stage("deploy") {
             steps {
                 // do something here to make the deployment work
