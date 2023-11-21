@@ -7,7 +7,6 @@ pipeline {
     stages {
         stage("build") {
             steps {
-                // I don't know how this works so I need to check that the building actually works
                 echo "Building..."
                 ./gradlew assemble
             }
@@ -15,7 +14,6 @@ pipeline {
 
         stage("test") {
             steps {
-                // the same as for the building comment
                 echo "Testing..."
                 ./gradlew test
             }
