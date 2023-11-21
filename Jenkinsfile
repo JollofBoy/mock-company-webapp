@@ -19,12 +19,5 @@ pipeline {
             }
         }
 
-//         // there may be a deploy stage that would need to be made
-//         stage("deploy") {
-//             steps {
-//                 // do something here to make the deployment work
-//             }
-//         }
-//
     }
 }
